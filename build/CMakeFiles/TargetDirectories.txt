@@ -1,3 +1,0 @@
-C:/dev/cpp/github/testcmake/build/CMakeFiles/helloworld.dir
-C:/dev/cpp/github/testcmake/build/CMakeFiles/ALL_BUILD.dir
-C:/dev/cpp/github/testcmake/build/CMakeFiles/ZERO_CHECK.dir
