@@ -1,0 +1,38 @@
+# Build output
+build/
+out/
+
+# CMake files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Visual Studio
+*.sln
+*.vcxproj*
+*.user
+*.suo
+.vs/
+
+# Debug / Release artefacts
+*.obj
+*.o
+*.exe
+*.dll
+*.pdb
+*.ilk
+
+# IDE/editor
+.vscode/
+.idea/
+*.log
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Allow committed executables placed in the project `exe/` folder
+!/exe/
+!/exe/*.exe
+!/exe/*.pdb

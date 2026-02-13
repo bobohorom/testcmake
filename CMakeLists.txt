@@ -13,3 +13,10 @@ include_directories(${CMAKE_SOURCE_DIR}/src)
 file(GLOB SOURCES "src/*.cpp" "src/*.c")
 
 add_executable(helloworld ${SOURCES})
+
+# Place runtime executable in repository-level exe/ directory (works for multi-config)
+set_target_properties(helloworld PROPERTIES
+	RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/exe
+	RUNTIME_OUTPUT_DIRECTORY_DEBUG ${CMAKE_SOURCE_DIR}/exe
+	RUNTIME_OUTPUT_DIRECTORY_RELEASE ${CMAKE_SOURCE_DIR}/exe
+)
