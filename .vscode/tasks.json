@@ -55,7 +55,7 @@
                 "-NoProfile",
                 "-Command",
                 "cmake --preset=gcc; cmake --build",
-                "${workspaceFolder}/build",
+                "${workspaceFolder}/out/build/gcc",
                 "--config",
                 "Debug"                
             ],

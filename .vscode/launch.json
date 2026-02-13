@@ -1,14 +1,15 @@
 {
   "version": "0.2.0",
   "configurations": [
+    
     {
       "name": "Launch helloworld (Windows)",
-      "type": "cppvsdbg",
+      "type": "cppdbg",
       "request": "launch",
       "preLaunchTask": "Build (MinGW)",
       "program": "${workspaceFolder}/exe/helloworld.exe",
       "args": [],
-      "stopAtEntry": true,
+      "stopAtEntry": false,
       "cwd": "${workspaceFolder}",
       "environment": [],
       "console": "integratedTerminal"
