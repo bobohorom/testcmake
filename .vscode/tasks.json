@@ -54,7 +54,10 @@
             "args": [
                 "-NoProfile",
                 "-Command",
-                "cmake --preset=gcc; cmake --build out/build/gcc"
+                "cmake --preset=gcc; cmake --build",
+                "${workspaceFolder}/build",
+                "--config",
+                "Debug"                
             ],
             "options": {
                 "cwd": "${workspaceFolder}"
