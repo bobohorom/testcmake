@@ -6,7 +6,10 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 # Add the executable
-# Use wildcard to collect all .cpp files in the current directory
-file(GLOB SOURCES "*.cpp" "*.c")
+# Add src directory to include path so headers are found after move
+include_directories(${CMAKE_SOURCE_DIR}/src)
+
+# Use wildcard to collect all .cpp and .c files in src/
+file(GLOB SOURCES "src/*.cpp" "src/*.c")
 
 add_executable(helloworld ${SOURCES})

@@ -1,0 +1,10 @@
+^C:\DEV\CPP\GITHUB\TESTCMAKE\CMAKELISTS.TXT
+setlocal
+C:\myapps\CMake\bin\cmake.exe -SC:/dev/cpp/github/testcmake -BC:/dev/cpp/github/testcmake/build --check-stamp-file C:/dev/cpp/github/testcmake/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
