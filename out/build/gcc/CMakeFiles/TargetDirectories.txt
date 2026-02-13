@@ -1,3 +1,0 @@
-C:/dev/cpp/github/testcmake/out/build/gcc/CMakeFiles/helloworld.dir
-C:/dev/cpp/github/testcmake/out/build/gcc/CMakeFiles/edit_cache.dir
-C:/dev/cpp/github/testcmake/out/build/gcc/CMakeFiles/rebuild_cache.dir
